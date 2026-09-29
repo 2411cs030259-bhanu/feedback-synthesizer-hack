@@ -1,0 +1,35 @@
+# Node
+node_modules/
+build/
+dist/
+coverage/
+*.log
+
+# Environment secrets
+.env
+!.env.example
+
+# Python
+.venv/
+venv/
+env1/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+*.pyc
+
+# SQLite data
+data/*.db
+data/feedback.db
+backend/data/feedback.db
+/tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.zip
+*.tar.gz

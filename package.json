@@ -1,0 +1,19 @@
+{
+  "name": "user-feedback-synthesizer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root workspace — orchestrates frontend + backend for local dev",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "dev:backend": "env1\\Scripts\\python.exe -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "npm-run-all --parallel dev:backend dev:frontend",
+    "setup:backend": "python -m venv env1 && env1\\Scripts\\pip.exe install -r backend/requirements.txt",
+    "setup:frontend": "cd frontend && npm install",
+    "setup": "npm run setup:frontend",
+    "install:all": "npm run setup:frontend"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
