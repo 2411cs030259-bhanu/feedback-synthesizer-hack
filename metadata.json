@@ -1,0 +1,6 @@
+{
+  "name": "User Feedback Synthesizer",
+  "description": "AI Agent with persistent Hindsight memory and Groq reasoning that synthesizes customer feedback across channels and detects recurring problems over time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
